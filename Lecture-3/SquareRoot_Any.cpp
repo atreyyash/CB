@@ -14,8 +14,7 @@ int main() {
         inc = inc / 10;
         cp++;
     }
-
-    i-=inc;
+    
     cout<<i<<endl;
 
     return 0;
