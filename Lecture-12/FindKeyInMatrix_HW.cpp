@@ -33,6 +33,10 @@ int main() {
             break;
         }
     }
+
+    if(isFound == false){
+        cout << "Key Not Found!" << endl;
+    }
     
 
     return 0;
