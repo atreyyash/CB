@@ -2,7 +2,7 @@
 #include<iostream>
 using namespace std;
 
-void printArray(int *a, int n){
+void printArray(int *a, int n) {
 	for (int i = 0; i < n; ++i)
 	{
 		cout << a[i] << " ";
@@ -10,34 +10,34 @@ void printArray(int *a, int n){
 	cout << endl;
 }
 
-void merge(int *a, int *b, int *c, int s, int e){
+void merge(int *a, int *b, int *c, int s, int e) {
 	int m = (s + e) / 2;
 	int i = s, j = m + 1, k = s;
 
-	while(i <= m && j <= e){
-		if(b[i] < c[j]){
+	while (i <= m && j <= e) {
+		if (b[i] < c[j]) {
 			a[k++] = b[i++];
 		}
-		else{
-			a[k++] = c[j++]; 
+		else {
+			a[k++] = c[j++];
 		}
 	}
 
-	while(j <= e){
+	while (j <= e) {
 		a[k++] = c[j++];
 	}
-	while(i <= m){
+	while (i <= m) {
 		a[k++] = b[i++];
 	}
 }
 
-void MergeSort(int *a, int s, int e){
+void MergeSort(int *a, int s, int e) {
 	// Base Case
-	if(s >= e){
+	if (s >= e) {
 		return;
 	}
 	// Recursive Case
-	
+
 	// 1. Divide
 	int b[1000], c[1000];
 	int mid = (s + e) / 2;
@@ -58,7 +58,7 @@ void MergeSort(int *a, int s, int e){
 	merge(a, b, c, s, e);
 }
 
-int main(){
+int main() {
 	int a[] = {4, 3, 1, 6, 2, 5};
 	int n = sizeof(a) / sizeof(int);
 

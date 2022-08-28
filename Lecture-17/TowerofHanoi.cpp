@@ -2,9 +2,9 @@
 #include<iostream>
 using namespace std;
 
-void TowerofHanoi(int n, char src, char helper, char des){
+void TowerofHanoi(int n, char src, char helper, char des) {
 	// Base Case
-	if(n == 0){
+	if (n == 0) {
 		return;
 	}
 	// Recurisve Case
@@ -13,11 +13,11 @@ void TowerofHanoi(int n, char src, char helper, char des){
 	TowerofHanoi(n - 1, helper, src, des);
 }
 
-int main(){
+int main() {
 	int n;
 	cin >> n;
 
 	TowerofHanoi(n, 'A', 'B', 'C');
-	
+
 	return 0;
 }
