@@ -4,6 +4,8 @@
         "*.js": "html",
         "istream": "cpp",
         "iostream": "cpp",
-        "ostream": "cpp"
+        "ostream": "cpp",
+        "algorithm": "cpp",
+        "vector": "cpp"
     }
 }
