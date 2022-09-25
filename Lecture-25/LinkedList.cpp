@@ -95,7 +95,6 @@ void InsertAtMid(Node *head, Node *tail, int data, int pos)
 //////////////////////////////// Delete In LL ////////////////////////
 void DeleteAtFront(Node *&head, Node *&tail)
 {
-    //////////////////////////////// Delete In LL ////////////////////////
     if (head == NULL)
     {
         return;
@@ -112,12 +111,14 @@ void DeleteAtFront(Node *&head, Node *&tail)
         delete temp;
     }
 }
+//////////////////////////////// Delete In LL ////////////////////////
 
 int main()
 {
     Node *head = NULL, *tail = NULL; // Pointers head and tail are the pointers of linked list
     // head points to the starting point of linked list
     // tail points at the end node of linked list
+    
     InsertAtFront(head, tail, 1);
     InsertAtFront(head, tail, 2);
     InsertAtFront(head, tail, 3);
