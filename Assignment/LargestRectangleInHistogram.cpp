@@ -2,6 +2,7 @@
 #include <stack>
 #include <vector>
 #include <algorithm>
+#define int long long
 using namespace std;
 
 int histogram(vector<int> &a)
@@ -53,7 +54,7 @@ int histogram(vector<int> &a)
     return ans;
 }
 
-int main()
+int32_t main()
 {
     vector<int> v;
     int n, a;
