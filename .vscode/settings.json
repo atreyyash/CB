@@ -7,6 +7,7 @@
         "ostream": "cpp",
         "algorithm": "cpp",
         "vector": "cpp",
-        "queue": "cpp"
+        "queue": "cpp",
+        "xhash": "cpp"
     }
 }
