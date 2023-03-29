@@ -21,6 +21,34 @@ void TargetSumTriplet(int *a, int n, int tar){
     
 }
 
+void O2Approach(int *a, int n, int t)
+{
+    sort(a, a + n);
+    for (int i = 0; i < n; i++)
+    {
+        int rem = t - a[i];
+        int s = i + 1;
+        int e = n - 1;
+        while (s < e)
+        {
+            if (a[s] + a[e] == rem)
+            {
+                cout << a[i] << ", " << a[s] << " and " << a[e] << endl;
+                s++;
+                e--;
+            }
+            else if (a[s] + a[e] > rem)
+            {
+                e--;
+            }
+            else
+            {
+                s++;
+            }
+        }
+    }
+}
+
 int main() {
     int a[1000];
     int n;
